@@ -6,10 +6,10 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+		<div class="internal-links" style="color: blue;">
+			<HeaderLink href="/">INICIO</HeaderLink>
+			<HeaderLink href="/blog">ACTIVIDADES</HeaderLink>
+			<HeaderLink href="/about">NOSOTROS</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -30,7 +30,7 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
-			<a href="https://github.com/withastro/astro" target="_blank">
+			<a href="https://github.com/Giorgo123" target="_blank">
 				<span class="sr-only">Go to Astro's GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
@@ -46,7 +46,7 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
+		background: lightsalmon;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
@@ -69,6 +69,14 @@ import { SITE_TITLE } from '../consts';
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
+	@media screen and (max-width: 767px) {
+    nav a {
+		padding: 1em 0.2em;
+		justify-content: center;
+	}
+}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--accent);
